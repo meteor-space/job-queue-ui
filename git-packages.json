@@ -1,0 +1,14 @@
+{
+  "space:base": {
+    "git":"https://github.com/meteor-space/base.git",
+    "branch": "develop"
+  },
+  "space:flux": {
+    "git":"https://github.com/meteor-space/flux.git",
+    "branch": "develop"
+  },
+  "space:job-queue": {
+    "git":"https://github.com/meteor-space/job-queue.git",
+    "branch": "develop"
+  }
+}
