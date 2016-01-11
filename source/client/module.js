@@ -5,7 +5,8 @@ Space.jobQueue = Space.Module.define('Space.jobQueue', {
   ],
 
   singletons: [
-    'Space.jobQueue.JobServer'
+    'Space.jobQueue.JobServer',
+    'Space.jobQueue.Trackers'
   ],
 
   stores: [

@@ -22,6 +22,7 @@ Package.onUse(function(api) {
   api.addFiles([
     'source/client/module.js',
     'source/client/job-server.js',
+    'source/client/trackers.js',
     'source/client/job-queue-store.js'
   ],'client');
 
