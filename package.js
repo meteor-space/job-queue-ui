@@ -35,10 +35,14 @@ Package.onTest(function(api) {
     'ecmascript',
     'practicalmeteor:munit@2.1.5',
     'space:base@3.2.1',
+    'space:job-queue',
     'space:job-queue-ui',
     'space:testing@2.0.1'
-  ]);
+  ], 'client');
 
-  api.addFiles('tests/client/module.tests.js', 'client');
+  api.addFiles([
+    'tests/client/test-app.js',
+    'tests/client/module.tests.js'
+  ], 'client');
 
 });
