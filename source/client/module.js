@@ -1,6 +1,7 @@
 Space.jobQueue = Space.Module.define('Space.jobQueue', {
 
   requiredModules: [
+    'Space.messaging',
     'Space.flux'
   ],
 
