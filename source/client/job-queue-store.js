@@ -1,4 +1,4 @@
-Space.flux.Store.extend(Space.jobQueue, 'JobQueueStore', {
+Space.flux.Store.extend('Space.jobQueue.JobQueueStore', {
 
   dependencies: {
     jobServerStats: 'Space.jobQueue.JobServerStats',

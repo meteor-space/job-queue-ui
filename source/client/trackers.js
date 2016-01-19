@@ -1,4 +1,4 @@
-Space.messaging.Tracker.extend(Space.jobQueue, 'Trackers', {
+Space.messaging.Tracker.extend('Space.jobQueue.Trackers', {
 
   autorun() {
     this.meteor.subscribe('space-jobQueue-job-server-stats');
