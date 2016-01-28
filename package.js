@@ -8,20 +8,21 @@ Package.describe({
 
 Package.onUse(function(api) {
 
-  api.versionsFrom("METEOR@1.0");
+  api.versionsFrom("1.2.0.1");
 
   api.use([
     'mongo',
     'ecmascript',
     'underscore',
-    'space:base@3.2.1',
-    'space:flux@0.6.1',
+    'space:base@4.1.0',
+    'space:flux@0.7.0',
     'vsivsi:job-collection@1.2.3'
   ], 'client');
 
   api.addFiles([
     'source/client/module.js',
     'source/client/job-server.js',
+    'source/client/trackers.js',
     'source/client/job-queue-store.js'
   ],'client');
 
@@ -33,11 +34,15 @@ Package.onTest(function(api) {
     'mongo',
     'ecmascript',
     'practicalmeteor:munit@2.1.5',
-    'space:base@3.2.1',
+    //'practicalmeteor:mocha@2.1.0',
+    'space:base@4.1.0',
     'space:job-queue-ui',
-    'space:testing@2.0.1'
-  ]);
+    'space:testing@3.0.1'
+  ], 'client');
 
-  api.addFiles('tests/client/module.tests.js', 'client');
+  api.addFiles([
+    'tests/client/test-app.js',
+    'tests/client/module.tests.js'
+  ], 'client');
 
 });
